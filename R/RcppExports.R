@@ -129,6 +129,7 @@ TrimUmis <- function(rpu_per_cell, trim_length, reverse = FALSE) {
 #' @param smooth smooth term, which is added to each UMI probability in case if some UMIs have only few observations (default=1)
 #' @return Vector of UMI probabilities.
 #' @export
+#' @importFrom Rcpp evalCpp
 GetUmisDistribution <- function(umis_per_gene_per_cell, smooth = 1L) {
     .Call('_dropestr_GetUmisDistribution', PACKAGE = 'dropestr', umis_per_gene_per_cell, smooth)
 }
