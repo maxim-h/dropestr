@@ -58,7 +58,8 @@ DataFrame ClassifierData::to_data_frame() const {
   }
 
   return DataFrame::create(_["Base"] = umi_small, _["Target"] = umi_large, _["MinRpU"] = reads_per_umi_small,
-                           _["MaxRpU"] = reads_per_umi_large, _["Quality"] = mean_log_quality_small);
+                           _["MaxRpU"] = reads_per_umi_large, _["Quality"] = mean_log_quality_small,
+                           Named("stringsAsFactors") = true);
 }
 
 ClassifierData::ClassifierRow::ClassifierRow(const std::string &umi_small, const std::string umi_large,
