@@ -257,6 +257,9 @@ PredictBayesian <- function(classifier, classifier.df, filt.gene, dp.matrices, n
   divSum <- function(x){
     x / sum(x)
   }
+  
+  classifier.df$Base <- as.factor(classifier.df$Base)
+  classifier.df$Target <- as.factor(classifier.df$Target)
 
   classifier.df <- classifier.df[ClassifierDfOrder(classifier.df),]
   rpus <- ExtractReadsPerUmi(filt.gene, one.gene=TRUE)
