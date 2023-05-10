@@ -12,7 +12,7 @@ Please see the vignettes:
 ## Installation
 
 ```r
-devtools::install_github('kharchenkolab/dropestr')
+devtools::install_github('maxim-h/dropestr')
 ```
 
 ## Cell Filtration Procedure
@@ -23,7 +23,7 @@ devtools::install_github('kharchenkolab/dropestr')
 
 
 
-## Citation 
+## Citation
 
 If you find this software useful for your research, please cite the corresponding [paper](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-018-1449-6):
 
